@@ -1,0 +1,15 @@
+@import "home", "login", "signup", "usermanage";
+
+$var: #ffffff;
+body {
+  background: $var;
+}
+.firstPg {
+  li {
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+}
+.navbar-right {
+  margin-top: 15px;
+}

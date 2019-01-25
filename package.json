@@ -1,0 +1,72 @@
+{
+  "name": "express_react",
+  "version": "1.0.0",
+  "description": "Basic Express React Boilerplate",
+  "engines": {
+    "node": ">=7.5.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist node_modules",
+    "dev": "webpack-dev-server --hot --inline",
+    "start": "webpack --config webpack.config.js",
+    "server": "nodemon ./src/server/server.js",
+    "dbset": "sequelize db:migrate && sequelize db:seed:all"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "Express",
+    "React"
+  ],
+  "author": "John",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "cors": "^2.8.5",
+    "css-loader": "^1.0.1",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jsonwebtoken": "^8.3.0",
+    "multer": "^1.4.1",
+    "mysql2": "^1.6.1",
+    "node-sass": "^4.9.4",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^5.1.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-saga": "^0.16.2",
+    "redux-thunk": "^2.3.0",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.1.0",
+    "sequelize": "^4.41.0",
+    "sequelize-cli": "^5.3.0",
+    "style-loader": "^0.23.1",
+    "webpack-dev-middleware": "^2.0.6",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^3.11.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^2.11.3"
+  },
+  "license": "ISC"
+}
